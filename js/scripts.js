@@ -14,8 +14,14 @@ $(document).ready(function() {
     var inputNumber1 = parseInt($("input#number1").val());
     var inputNumber2 = parseInt($("input#number2").val());
     console.log(inputNumber1);
+    if(inputNumber1 >= 0 && inputNumber2 >= 0) {
+      addByMultiples(inputNumber1,inputNumber2);
+      } else {
+      alert("please enter two positive numbers")
+      }
 
-    addByMultiples(inputNumber1,inputNumber2);
+
+
 
   event.preventDefault();
   });
